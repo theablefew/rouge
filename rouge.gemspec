@@ -1,6 +1,7 @@
 # frozen_string_literal: true
-
-require './lib/rouge/version'
+lib = File.expand_path('../lib', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+require 'rouge/version'
 
 Gem::Specification.new do |s|
   s.name = "rouge"
